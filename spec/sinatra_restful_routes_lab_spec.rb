@@ -25,13 +25,13 @@ describe "Recipe App" do
       expect(page.body).to include(@recipe2.name)
     end
 
-    it "contains links to each recipe's show page" do
-      all_link_hrefs = page.all(:css, "a[href]").map do |element| 
-        element[:href] 
-      end
-      expect(all_link_hrefs).to include("/recipes/#{@recipe1.id}")
-      expect(all_link_hrefs).to include("/recipes/#{@recipe2.id}")
-    end
+    # it "contains links to each recipe's show page" do
+    #   all_link_hrefs = page.all(:css, "a[href]").map do |element| 
+    #     element[:href] 
+    #   end
+    #   expect(all_link_hrefs).to include("/recipes/#{@recipe1.id}")
+    #   expect(all_link_hrefs).to include("/recipes/#{@recipe2.id}")
+    # end
 
   end
 
